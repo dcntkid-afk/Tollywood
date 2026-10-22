@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-300: #C9A45C;
+  --color-gold-400: #B58A3A;
+  --color-gold-500: #B58A3A;
+  --color-gold-600: #9A7229;
+  --color-gold-700: #7B5A1E;
+
+  --color-mandi-dark: #F5EFE3;
+  --color-mandi-surface: #EDE3D2;
+  --color-mandi-card: #EDE3D2;
+  --color-mandi-crimson: #6B2525;
+  --color-mandi-accent: #B58A3A;
+
+  --color-cream: #F5EFE3;
+  --color-panel: #EDE3D2;
+  --color-heading: #171717;
+  --color-body: #39332D;
+  --color-divider: #D8C9AF;
+
+  --font-cinzel: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F5EFE3;
+  color: #171717;
+}
+
+.gold-gradient-text {
+  color: #B58A3A;
+}
+
+.royal-border {
+  border: 1px solid #D8C9AF;
+}
+
+.royal-glow {
+  box-shadow: 0 12px 32px rgba(57, 51, 45, 0.08);
+}
+
+.arabic-pattern {
+  background-color: #F5EFE3;
+  background-image: radial-gradient(rgba(181, 138, 58, 0.14) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+

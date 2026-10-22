@@ -1,0 +1,6 @@
+{
+  "name": "Tollywood Mandi — SR Nagar, Hyderabad",
+  "description": "Authentic Arabian Mandi with Telugu Cinema Soul in SR Nagar, Hyderabad. Order Bahubali Giant Mandi Trays, Kushi Mutton Juicy, RRR Chicken Mandi, or reserve an Arabian Majlis floor cabin online.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tollywood Mandi | Authentic Arabian Mandi with Telugu Cinema Soul | SR Nagar, Hyderabad</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN (Loaded before tailwind.config) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            300: '#FDE68A',
+                            400: '#FACC15',
+                            500: '#D4AF37',
+                            600: '#B8972E',
+                            700: '#8C7320',
+                        },
+                        mandi: {
+                            dark: '#0A0504',
+                            surface: '#150B08',
+                            card: '#1F100B',
+                            crimson: '#7A1315',
+                            accent: '#E63946'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF0B3 0%, #D4AF37 50%, #AA820A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .royal-border {
+            border: 1px solid rgba(212, 175, 55, 0.28);
+        }
+        .royal-glow {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+        }
+        .hero-bg {
+            background: linear-gradient(to bottom, rgba(10, 5, 4, 0.72), rgba(10, 5, 4, 0.96)), 
+                        url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+        }
+        .arabic-pattern {
+            background-color: #0A0504;
+            background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px);
+            background-size: 26px 26px;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-mandi-dark text-[#FDF7E7] font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-black">
+
+    <!-- Top Bar -->
+    <div class="bg-gradient-to-r from-mandi-crimson via-gold-600 to-mandi-crimson text-black font-semibold text-xs md:text-sm py-1.5 px-4 text-center tracking-wider uppercase flex items-center justify-center gap-2">
+        <span>🎬 The Legendary Tollywood Themed Mandi Experience • SR Nagar, Hyderabad</span>
+        <span class="hidden md:inline">|</span>
+        <span class="hidden md:inline"><i class="fa-solid fa-clock mr-1"></i> Open Daily 12:30 PM to 01:00 AM (Midnight Dining)</span>
+        <span class="hidden md:inline">|</span>
+        <a href="tel:+919866615115" class="hover:underline font-bold text-white"><i class="fa-solid fa-phone mr-1"></i> +91 98666 15115</a>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-mandi-dark/95 backdrop-blur-md border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full border-2 border-gold-500 flex items-center justify-center bg-gradient-to-br from-gold-600 to-mandi-crimson text-black shadow-lg group-hover:scale-105 transition">
+                    <i class="fa-solid fa-crown text-xl text-white"></i>
+                </div>
+                <div>
+                    <span class="font-cinzel text-xl sm:text-2xl font-black tracking-wider block gold-gradient-text uppercase leading-none">Tollywood Mandi</span>
+                    <span class="text-[10px] tracking-widest text-stone-400 uppercase font-semibold">SR Nagar • Ameerpet • Hyderabad</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-stone-300">
+                <a href="#home" class="hover:text-gold-400 transition">Home</a>
+                <a href="#menu" class="hover:text-gold-400 transition">Movie Menu</a>
+                <a href="#platters" class="hover:text-gold-400 transition">Giant Trays</a>
+                <a href="#ambience" class="hover:text-gold-400 transition">Majlis Cabins</a>
+                <a href="#booking" class="hover:text-gold-400 transition">Book Table</a>
+                <a href="#contact" class="hover:text-gold-400 transition">Contact & Location</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-3">
+                <button onclick="toggleCartDrawer(true)" class="relative bg-mandi-surface hover:bg-stone-900 border border-gold-500/40 p-2.5 rounded-full text-gold-400 transition flex items-center justify-center" aria-label="Open Cart">
+                    <i class="fa-solid fa-basket-shopping text-lg"></i>
+                    <span id="cartCountBadge" class="absolute -top-1.5 -right-1.5 bg-mandi-accent text-white font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                </button>
+                <a href="#menu" class="hidden sm:inline-flex bg-gradient-to-r from-gold-500 to-amber-600 hover:brightness-110 text-black text-xs uppercase font-extrabold px-4 py-2.5 rounded-lg shadow-md transition items-center gap-2">
+                    <i class="fa-solid fa-bolt"></i> Order Now
+                </a>
+                <button onclick="toggleMobileNav()" class="lg:hidden text-gold-400 p-2 text-xl" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobileNav" class="hidden lg:hidden bg-mandi-surface border-b border-gold-500/20 px-6 py-5 space-y-3 text-sm">
+            <a href="#home" onclick="toggleMobileNav()" class="block py-1 hover:text-gold-400">Home</a>
+            <a href="#menu" onclick="toggleMobileNav()" class="block py-1 hover:text-gold-400">Tollywood Menu</a>
+            <a href="#platters" onclick="toggleMobileNav()" class="block py-1 hover:text-gold-400">Bahubali Giant Trays</a>
+            <a href="#ambience" onclick="toggleMobileNav()" class="block py-1 hover:text-gold-400">Majlis Ambience</a>
+            <a href="#booking" onclick="toggleMobileNav()" class="block py-1 hover:text-gold-400">Book Majlis Cabin</a>
+            <a href="#contact" onclick="toggleMobileNav()" class="block py-1 hover:text-gold-400">Location & Direction</a>
+            <div class="pt-3 border-t border-stone-800 flex flex-col gap-2">
+                <a href="tel:+919866615115" class="bg-mandi-card border border-gold-500/30 text-gold-300 py-2.5 rounded-lg text-center font-semibold">
+                    <i class="fa-solid fa-phone mr-1"></i> Call +91 98666 15115
+                </a>
+                <a href="https://wa.me/919866615115?text=Hello%20Tollywood%20Mandi,%20I%20want%20to%20order%20food" target="_blank" class="bg-emerald-600 text-white py-2.5 rounded-lg text-center font-bold">
+                    <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp Order
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative hero-bg min-h-[92vh] flex items-center justify-center text-center px-4 py-16 sm:py-24">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/70 border border-gold-500/50 text-gold-300 text-xs sm:text-sm tracking-widest uppercase">
+                <i class="fa-solid fa-film text-gold-400"></i> Authentic Arabian Mandi with Telugu Cinema Soul
+            </div>
+            
+            <h1 class="font-cinzel text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-tight">
+                Blockbuster Flavors, <br>
+                <span class="gold-gradient-text">Mass Maharajah Feasts</span>
+            </h1>
+
+            <p class="text-base sm:text-lg md:text-xl text-stone-300 max-w-2xl mx-auto font-light leading-relaxed">
+                Relish Hyderabad's favorite <strong class="text-gold-300 font-semibold">Bahubali Giant Mandi</strong>, <strong class="text-gold-300 font-semibold">Kushi Mutton Juicy</strong>, and <strong class="text-gold-300 font-semibold">RRR Chicken Mandi</strong> in authentic Arabian Majlis private floor cabins at SR Nagar!
+            </p>
+
+            <!-- CTA Actions -->
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+                <a href="#menu" class="bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 hover:to-amber-500 text-black font-extrabold px-8 py-3.5 rounded-xl shadow-xl shadow-gold-500/20 transform hover:-translate-y-0.5 transition flex items-center gap-2">
+                    <i class="fa-solid fa-utensils"></i> Order Blockbuster Menu
+                </a>
+                <a href="#booking" class="bg-mandi-crimson hover:bg-mandi-crimson/90 border border-gold-500/50 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg hover:-translate-y-0.5 transition flex items-center gap-2">
+                    <i class="fa-solid fa-couch"></i> Book Majlis Cabin
+                </a>
+                <a href="https://wa.me/919866615115?text=Hello%20Tollywood%20Mandi,%20I%20want%20to%20order%20food%20or%20reserve%20a%20table" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl flex items-center gap-2 shadow-lg hover:-translate-y-0.5 transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp
+                </a>
+            </div>
+
+            <!-- Quick Metrics -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-10 border-t border-gold-500/25 max-w-3xl mx-auto text-left">
+                <div class="flex items-center gap-3 bg-black/40 p-3 rounded-lg border border-gold-500/20">
+                    <i class="fa-solid fa-drumstick-bite text-2xl text-gold-400"></i>
+                    <div>
+                        <p class="text-[11px] text-stone-400 uppercase">Specialty</p>
+                        <p class="text-xs sm:text-sm font-bold text-white">Juicy & Faham</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-black/40 p-3 rounded-lg border border-gold-500/20">
+                    <i class="fa-solid fa-users text-2xl text-gold-400"></i>
+                    <div>
+                        <p class="text-[11px] text-stone-400 uppercase">Giant Trays</p>
+                        <p class="text-xs sm:text-sm font-bold text-white">Bahubali (8 Pax)</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-black/40 p-3 rounded-lg border border-gold-500/20">
+                    <i class="fa-solid fa-star text-2xl text-gold-400"></i>
+                    <div>
+                        <p class="text-[11px] text-stone-400 uppercase">Google Rating</p>
+                        <p class="text-xs sm:text-sm font-bold text-white">4.1★ (SR Nagar)</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-black/40 p-3 rounded-lg border border-gold-500/20">
+                    <i class="fa-solid fa-clock text-2xl text-gold-400"></i>
+                    <div>
+                        <p class="text-[11px] text-stone-400 uppercase">Midnight Dine</p>
+                        <p class="text-xs sm:text-sm font-bold text-white">Open Till 1 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giant Platters Showcase Section -->
+    <section id="platters" class="py-16 bg-gradient-to-b from-mandi-dark via-mandi-surface to-mandi-dark border-b border-gold-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-xs uppercase tracking-widest text-gold-400 font-bold"><i class="fa-solid fa-crown mr-1"></i> Mega Family Feasts</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-extrabold text-white mt-1">Tollywood Giant Mandi Trays</h2>
+                <div class="w-20 h-1 bg-gold-500 mx-auto my-3 rounded-full"></div>
+                <p class="text-stone-300 text-xs sm:text-sm">Slow-cooked fragrant Yemeni basmati rice topped with hand-roasted meats, nuts, raisins, authentic Arabic mandi shorba soup, and house-blended garlic mayonnaise.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Bahubali Platter -->
+                <div class="bg-mandi-card rounded-2xl overflow-hidden royal-border hover:border-gold-500 transition duration-300 flex flex-col justify-between relative group">
+                    <div class="absolute top-3 left-3 z-10 bg-gold-500 text-black text-[11px] font-black uppercase px-3 py-1 rounded-full shadow-lg">
+                        Grand Blockbuster
+                    </div>
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800&auto=format&fit=crop" alt="Bahubali Mandi Tray" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-mandi-card via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex justify-between items-start gap-2">
+                                <h3 class="font-cinzel text-xl font-bold text-white">Bahubali Mandi Tray</h3>
+                                <span class="text-gold-400 font-extrabold text-lg">₹3,299</span>
+                            </div>
+                            <span class="inline-block bg-stone-900 border border-gold-500/30 text-gold-300 text-[10px] px-2 py-0.5 rounded-full font-semibold my-2">Serves 7 – 8 Persons</span>
+                            <p class="text-stone-300 text-xs leading-relaxed">Chicken fry [2 pcs], Faham chicken [1 pc], Barbeque [1 pc], Broasted [1 pc], Juicy Mutton [1 pc], Fish Fry [1 pc], 1 Starter & 2 Cool Beverages with limitless soup & dips.</p>
+                        </div>
+                        <button onclick="addToCartDirect('g1')" class="w-full bg-gradient-to-r from-gold-500 to-amber-600 hover:brightness-110 text-black font-extrabold py-2.5 rounded-lg text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-cart-plus"></i> Add Bahubali Tray
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Maya Bazar Platter -->
+                <div class="bg-mandi-card rounded-2xl overflow-hidden royal-border hover:border-gold-500 transition duration-300 flex flex-col justify-between relative group">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Maya Bazar Mandi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-mandi-card via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex justify-between items-start gap-2">
+                                <h3 class="font-cinzel text-xl font-bold text-white">Maya Bazar Mandi</h3>
+                                <span class="text-gold-400 font-extrabold text-lg">₹2,299</span>
+                            </div>
+                            <span class="inline-block bg-stone-900 border border-gold-500/30 text-gold-300 text-[10px] px-2 py-0.5 rounded-full font-semibold my-2">Serves 4 – 5 Persons</span>
+                            <p class="text-stone-300 text-xs leading-relaxed">Chicken juicy [1 pc], Faham chicken [1 pc], Mutton fry [1 pc], Barbeque [1 pc], Fish fry [1 pc], Double Ka Meetha and Kaddu Ka Kheer.</p>
+                        </div>
+                        <button onclick="addToCartDirect('g2')" class="w-full bg-gradient-to-r from-gold-500 to-amber-600 hover:brightness-110 text-black font-extrabold py-2.5 rounded-lg text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-cart-plus"></i> Add Maya Bazar Tray
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tollywood Special Tray -->
+                <div class="bg-mandi-card rounded-2xl overflow-hidden royal-border hover:border-gold-500 transition duration-300 flex flex-col justify-between relative group">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?q=80&w=800&auto=format&fit=crop" alt="Tollywood Special Mandi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-mandi-card via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex justify-between items-start gap-2">
+                                <h3 class="font-cinzel text-xl font-bold text-white">Tollywood's Special Mandi</h3>
+                                <span class="text-gold-400 font-extrabold text-lg">₹1,799</span>
+                            </div>
+                            <span class="inline-block bg-stone-900 border border-gold-500/30 text-gold-300 text-[10px] px-2 py-0.5 rounded-full font-semibold my-2">Serves 3 – 4 Persons</span>
+                            <p class="text-stone-300 text-xs leading-relaxed">Mutton Turkish Mandi, RRR Chicken Mandi, Crispy Fried Fish, Chicken Mongolian starter and 2 chilled beverages.</p>
+                        </div>
+                        <button onclick="addToCartDirect('g3')" class="w-full bg-gradient-to-r from-gold-500 to-amber-600 hover:brightness-110 text-black font-extrabold py-2.5 rounded-lg text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-cart-plus"></i> Add Tollywood Special
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Interactive Menu -->
+    <section id="menu" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto arabic-pattern">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-xs uppercase tracking-widest text-gold-400 font-semibold">SR Nagar Official Menu</span>
+            <h2 class="font-cinzel text-3xl sm:text-5xl font-black mt-1 text-white">Tollywood Blockbuster Menu</h2>
+            <div class="w-20 h-1 bg-gold-500 mx-auto my-3 rounded-full"></div>
+            <p class="text-stone-300 text-xs sm:text-sm">Every dish is christened with Telugu cinematic folklore and perfected with authentic slow-steamed Mandi basmati rice, charred tandoori cuts, and Hyderabad ghee roasts.</p>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="space-y-5 mb-10">
+            <!-- Search Bar -->
+            <div class="max-w-md mx-auto relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-stone-500 text-sm"></i>
+                <input 
+                    type="text" 
+                    id="menuSearchInput" 
+                    oninput="handleSearchMenu()"
+                    placeholder="Search RRR Chicken, Pushpa Drumsticks, Salaar Mutton..." 
+                    class="w-full bg-mandi-card border border-gold-500/30 rounded-full pl-11 pr-4 py-3 text-xs sm:text-sm text-white placeholder-stone-500 focus:outline-none focus:border-gold-500 shadow-inner"
+                >
+            </div>
+
+            <!-- Category Pills -->
+            <div class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-2 hide-scrollbar" id="categoryContainer">
+                <button onclick="filterCategory('all', this)" class="cat-pill active-cat px-5 py-2 rounded-full text-xs sm:text-sm font-semibold border border-gold-500 bg-gold-500 text-black whitespace-nowrap transition">All Blockbusters</button>
+                <button onclick="filterCategory('mutton', this)" class="cat-pill px-5 py-2 rounded-full text-xs sm:text-sm font-medium border border-gold-500/30 bg-mandi-card text-stone-300 hover:border-gold-500 whitespace-nowrap transition">Mutton Mandi</button>
+                <button onclick="filterCategory('chicken', this)" class="cat-pill px-5 py-2 rounded-full text-xs sm:text-sm font-medium border border-gold-500/30 bg-mandi-card text-stone-300 hover:border-gold-500 whitespace-nowrap transition">Chicken Mandi</button>
+                <button onclick="filterCategory('starters', this)" class="cat-pill px-5 py-2 rounded-full text-xs sm:text-sm font-medium border border-gold-500/30 bg-mandi-card text-stone-300 hover:border-gold-500 whitespace-nowrap transition">Starters & Tikka</button>
+                <button onclick="filterCategory('veg', this)" class="cat-pill px-5 py-2 rounded-full text-xs sm:text-sm font-medium border border-gold-500/30 bg-mandi-card text-stone-300 hover:border-gold-500 whitespace-nowrap transition">Veg Mandi & Starters</button>
+                <button onclick="filterCategory('desserts', this)" class="cat-pill px-5 py-2 rounded-full text-xs sm:text-sm font-medium border border-gold-500/30 bg-mandi-card text-stone-300 hover:border-gold-500 whitespace-nowrap transition">Desserts & Goli Soda</button>
+            </div>
+        </div>
+
+        <!-- Menu Grid -->
+        <div id="menuGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Dynamic Menu items will render here via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Majlis Seating & Tollywood Vibe Showcase -->
+    <section id="ambience" class="py-16 bg-mandi-surface border-y border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="space-y-5">
+                    <span class="text-xs uppercase tracking-widest text-gold-400 font-bold"><i class="fa-solid fa-couch mr-1"></i> Authentic Majlis Ambience</span>
+                    <h2 class="font-cinzel text-3xl sm:text-4xl font-extrabold text-white">Floor Seating Meets Film Nostalgia</h2>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Step into Hyderabad's grandest cinematic dining venue! At Tollywood Mandi SR Nagar, we blend traditional velvet Persian carpet floor-seating (Majlis) with vintage Tollywood film posters, warm chandeliers, and intimate private family dining cubicles.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-mandi-card p-4 rounded-xl border border-stone-800">
+                            <i class="fa-solid fa-users-rays text-gold-400 text-xl mb-1"></i>
+                            <h4 class="font-semibold text-white text-sm">Family Majlis Cabins</h4>
+                            <p class="text-stone-400 text-xs">Private curtains with low dining wooden tables & cushions.</p>
+                        </div>
+                        <div class="bg-mandi-card p-4 rounded-xl border border-stone-800">
+                            <i class="fa-solid fa-volume-high text-gold-400 text-xl mb-1"></i>
+                            <h4 class="font-semibold text-white text-sm">Cinema Beats</h4>
+                            <p class="text-stone-400 text-xs">Enjoy retro and trending Telugu soundtracks while feasting.</p>
+                        </div>
+                        <div class="bg-mandi-card p-4 rounded-xl border border-stone-800">
+                            <i class="fa-solid fa-cake-candles text-gold-400 text-xl mb-1"></i>
+                            <h4 class="font-semibold text-white text-sm">Celebration Spot</h4>
+                            <p class="text-stone-400 text-xs">Ideal for birthdays, treat parties, and college reunions.</p>
+                        </div>
+                        <div class="bg-mandi-card p-4 rounded-xl border border-stone-800">
+                            <i class="fa-solid fa-bowl-food text-gold-400 text-xl mb-1"></i>
+                            <h4 class="font-semibold text-white text-sm">Unlimited Shorba</h4>
+                            <p class="text-stone-400 text-xs">Complimentary spiced bone broth served hot at every table.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Collage -->
+                <div class="grid grid-cols-2 gap-3">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" alt="Mandi Ambience" class="rounded-xl object-cover h-44 sm:h-52 w-full royal-border">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=600&auto=format&fit=crop" alt="Restaurant Interior" class="rounded-xl object-cover h-44 sm:h-52 w-full royal-border mt-4">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=600&auto=format&fit=crop" alt="Dining Platter" class="rounded-xl object-cover h-44 sm:h-52 w-full royal-border">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=600&auto=format&fit=crop" alt="Floor Seating" class="rounded-xl object-cover h-44 sm:h-52 w-full royal-border mt-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table & Majlis Reservation Section -->
+    <section id="booking" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-mandi-card rounded-3xl p-6 sm:p-10 royal-border royal-glow">
+            <div class="text-center max-w-xl mx-auto mb-8">
+                <span class="text-xs uppercase tracking-widest text-gold-400 font-bold"><i class="fa-solid fa-calendar-check mr-1"></i> Zero Waiting Time</span>
+                <h2 class="font-cinzel text-2xl sm:text-4xl font-extrabold text-white mt-1">Reserve Your Majlis Cabin</h2>
+                <div class="w-16 h-1 bg-gold-500 mx-auto my-2 rounded-full"></div>
+                <p class="text-stone-300 text-xs sm:text-sm">Enjoy seamless dining without waiting in queues. Reserve a private curtained Majlis cabin or standard dining table in advance.</p>
+            </div>
+
+            <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-300 mb-1">Your Full Name *</label>
+                        <input type="text" id="resName" required placeholder="e.g. Sravan Reddy" class="w-full bg-mandi-surface border border-stone-800 rounded-lg px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-gold-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-300 mb-1">Phone / WhatsApp Number *</label>
+                        <input type="tel" id="resPhone" required placeholder="e.g. 98666 15115" class="w-full bg-mandi-surface border border-stone-800 rounded-lg px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-gold-500">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-300 mb-1">Reservation Date *</label>
+                        <input type="date" id="resDate" required class="w-full bg-mandi-surface border border-stone-800 rounded-lg px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-gold-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-300 mb-1">Time Slot *</label>
+                        <select id="resTime" required class="w-full bg-mandi-surface border border-stone-800 rounded-lg px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-gold-500">
+                            <option value="12:30 PM - Lunch">12:30 PM (Lunch)</option>
+                            <option value="01:30 PM - Lunch">01:30 PM (Lunch)</option>
+                            <option value="02:30 PM - Lunch">02:30 PM (Lunch)</option>
+                            <option value="07:00 PM - Dinner">07:00 PM (Dinner)</option>
+                            <option value="08:30 PM - Dinner">08:30 PM (Prime Dinner)</option>
+                            <option value="09:30 PM - Dinner">09:30 PM (Late Dinner)</option>
+                            <option value="11:00 PM - Midnight">11:00 PM (Midnight Feast)</option>
+                            <option value="12:00 AM - Midnight">12:00 AM (Midnight Special)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-300 mb-1">Number of Guests *</label>
+                        <select id="resGuests" required class="w-full bg-mandi-surface border border-stone-800 rounded-lg px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-gold-500">
+                            <option value="2 Guests">2 Persons (Couple)</option>
+                            <option value="3-4 Guests">3 – 4 Persons</option>
+                            <option value="5-7 Guests">5 – 7 Persons</option>
+                            <option value="8-12 Guests (Bahubali Feast)">8 – 12 Persons (Bahubali Feast)</option>
+                            <option value="15+ Guests (Party)">15+ Persons (Private Party)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-300 mb-1">Preferred Seating Style</label>
+                        <select id="resSeating" class="w-full bg-mandi-surface border border-stone-800 rounded-lg px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-gold-500">
+                            <option value="Arabian Majlis Floor Seating">Arabian Majlis Floor Seating (Carpet & Cushions)</option>
+                            <option value="Private Family Cabin">Private Family Cabin (Curtained)</option>
+                            <option value="Standard AC Table Seating">Standard AC Table Seating (Chairs)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-300 mb-1">Special Occasion / Requests</label>
+                        <input type="text" id="resNotes" placeholder="e.g. Birthday celebration, spicy mandi" class="w-full bg-mandi-surface border border-stone-800 rounded-lg px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-gold-500">
+                    </div>
+                </div>
+
+                <div class="pt-3">
+                    <button type="submit" class="w-full bg-gradient-to-r from-gold-500 via-amber-600 to-gold-500 hover:brightness-110 text-black font-extrabold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-check-circle text-lg"></i> Confirm Reservation via WhatsApp Instantly
+                    </button>
+                    <p class="text-center text-[11px] text-stone-400 mt-2">
+                        <i class="fa-solid fa-shield-halved text-gold-400 mr-1"></i> Instant confirmation sent directly to our SR Nagar front desk phone (+91 98666 15115).
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-16 bg-mandi-surface/50 border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-10">
+                <span class="text-xs uppercase tracking-widest text-gold-400 font-bold">Hyderabadi Diners Speak</span>
+                <h2 class="font-cinzel text-3xl font-extrabold text-white mt-1">Real Foodie Testimonials</h2>
+                <div class="w-16 h-1 bg-gold-500 mx-auto my-2 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-mandi-card p-6 rounded-2xl royal-border space-y-3">
+                    <div class="flex text-gold-400 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-300 text-xs italic leading-relaxed">"The Bahubali Mandi here is absolutely unmatched for groups! We came as a gang of 8 friends. The mutton juicy piece melted off the bone, and the chicken Faham had that authentic smoky charcoal flavor."</p>
+                    <div class="pt-2 border-t border-stone-800 flex items-center justify-between text-xs">
+                        <span class="font-bold text-white">Sai Teja K.</span>
+                        <span class="text-stone-400">SR Nagar Regular</span>
+                    </div>
+                </div>
+
+                <div class="bg-mandi-card p-6 rounded-2xl royal-border space-y-3">
+                    <div class="flex text-gold-400 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-300 text-xs italic leading-relaxed">"Pushpa Chicken Drumsticks are an absolute blast – super fiery and crusted nicely. Plus the Arabic Majlis floor seating is clean and comfortable for families. Don't miss their Adhipathi Apricot Delight!"</p>
+                    <div class="pt-2 border-t border-stone-800 flex items-center justify-between text-xs">
+                        <span class="font-bold text-white">Pooja Sharma</span>
+                        <span class="text-stone-400">Family Dine-in</span>
+                    </div>
+                </div>
+
+                <div class="bg-mandi-card p-6 rounded-2xl royal-border space-y-3">
+                    <div class="flex text-gold-400 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-stone-300 text-xs italic leading-relaxed">"Open till 1:00 AM! Best midnight craving spot in Ameerpet/SR Nagar. We ordered Kushi Mutton Juicy Mandi at 11:30 PM on WhatsApp, and it was piping hot with flavorful spiced rice."</p>
+                    <div class="pt-2 border-t border-stone-800 flex items-center justify-between text-xs">
+                        <span class="font-bold text-white">Vikramaditya V.</span>
+                        <span class="text-stone-400">Midnight Foodie</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Verified Location Section -->
+    <section id="contact" class="py-16 bg-mandi-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <!-- Location Info -->
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-gold-400 font-bold"><i class="fa-solid fa-map-pin mr-1"></i> Reach Our Outlet</span>
+                        <h2 class="font-cinzel text-3xl sm:text-4xl font-extrabold text-white mt-1">Visit Tollywood Mandi</h2>
+                        <div class="w-16 h-1 bg-gold-500 my-2 rounded-full"></div>
+                    </div>
+
+                    <div class="space-y-4 text-stone-300 text-xs sm:text-sm">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-mandi-surface border border-gold-500/30 flex items-center justify-center text-gold-400 flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white">Full Address</h4>
+                                <p id="contactAddress">1st Floor, Venkat's Building, H.No. 7-1-397/126 (B-92 MIGH), Sanjeeva Reddy Nagar, Ameerpet, Hyderabad, Telangana 500038</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-mandi-surface border border-gold-500/30 flex items-center justify-center text-gold-400 flex-shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white">Operating Hours</h4>
+                                <p>Monday – Sunday: 12:30 PM to 01:00 AM (Midnight dining, takeaway & home delivery)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-mandi-surface border border-gold-500/30 flex items-center justify-center text-gold-400 flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white">Direct Phone & WhatsApp</h4>
+                                <p><a href="tel:+919866615115" class="hover:underline font-bold text-gold-400">+91 98666 15115</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a href="https://maps.app.goo.gl/fPqZxUEgb39VZA488" target="_blank" class="bg-gradient-to-r from-gold-500 to-amber-600 text-black font-extrabold px-6 py-3 rounded-xl text-xs flex items-center gap-2 shadow-lg hover:brightness-110 transition">
+                            <i class="fa-solid fa-diamond-turn-right text-base"></i> Open GPS in Google Maps
+                        </a>
+                        <a href="https://wa.me/919866615115?text=Hello%20Tollywood%20Mandi,%20I%20would%20like%20to%20order%20food%20or%20reserve%20a%20table" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl text-xs flex items-center gap-2 shadow-lg transition">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Live Google Maps Embed -->
+                <div class="rounded-2xl overflow-hidden royal-border h-80 sm:h-96 relative shadow-2xl">
+                    <iframe 
+                        title="Tollywood Mandi Location Map"
+                        src="https://maps.google.com/maps?q=Tollywood+Mandi+Venkat's+Sanjeeva+Reddy+Nagar+Hyderabad&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-full border-0 filter contrast-125 opacity-90 hover:opacity-100 transition" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <div class="absolute bottom-3 left-3 right-3 bg-black/90 backdrop-blur-md p-3 rounded-xl border border-gold-500/30 text-xs text-stone-300 flex items-center justify-between">
+                        <span><i class="fa-solid fa-map-pin text-gold-400 mr-1.5"></i> Venkat's, 1st Floor, SR Nagar</span>
+                        <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle text-[8px] mr-1"></i> Open till 1:00 AM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar Drawer -->
+    <div id="cartDrawer" class="fixed inset-y-0 right-0 w-full sm:w-[420px] bg-mandi-card/95 backdrop-blur-xl border-l border-gold-500/30 z-50 transform translate-x-full transition duration-300 flex flex-col justify-between shadow-2xl">
+        <!-- Header -->
+        <div class="p-5 border-b border-gold-500/20 flex items-center justify-between bg-mandi-dark">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-basket-shopping text-gold-400 text-lg"></i>
+                <h3 class="font-cinzel font-bold text-white text-base">Your Tollywood Feast Plate</h3>
+            </div>
+            <button onclick="toggleCartDrawer(false)" class="text-stone-400 hover:text-white p-1 rounded-lg">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Order Type Selection -->
+        <div class="p-4 bg-mandi-surface border-b border-stone-800">
+            <div class="grid grid-cols-3 gap-1 bg-stone-900 p-1 rounded-xl text-[11px] font-semibold text-stone-300 text-center">
+                <button onclick="setOrderType('delivery')" id="typeDelivery" class="py-1.5 rounded-lg bg-gold-500 text-black font-bold">Delivery</button>
+                <button onclick="setOrderType('takeaway')" id="typeTakeaway" class="py-1.5 rounded-lg hover:text-white">Takeaway</button>
+                <button onclick="setOrderType('dinein')" id="typeDinein" class="py-1.5 rounded-lg hover:text-white">Dine-In</button>
+            </div>
+        </div>
+
+        <!-- Cart Items List (Scrollable) -->
+        <div id="cartItemsList" class="flex-1 overflow-y-auto p-4 space-y-3">
+            <!-- Rendered via JS -->
+        </div>
+
+        <!-- Cart Footer -->
+        <div id="cartFooter" class="p-5 border-t border-gold-500/20 bg-mandi-dark space-y-3">
+            <!-- Coupon Code -->
+            <div class="flex gap-2">
+                <input type="text" id="couponInput" placeholder="Try TOLLYWOOD15" class="flex-1 bg-mandi-surface border border-stone-800 rounded-lg px-3 py-1.5 text-xs text-white uppercase focus:outline-none focus:border-gold-500">
+                <button onclick="applyCoupon()" class="bg-gold-500 text-black font-bold text-xs px-3 py-1.5 rounded-lg hover:bg-gold-400 transition">Apply</button>
+            </div>
+            <div id="couponMsg" class="hidden text-[10px] text-emerald-400 font-semibold"></div>
+
+            <!-- Price Breakdown -->
+            <div class="space-y-1 text-xs text-stone-400 pt-1">
+                <div class="flex justify-between">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal" class="text-stone-200">₹0</span>
+                </div>
+                <div class="flex justify-between" id="discountRow" style="display:none;">
+                    <span class="text-emerald-400">Movie Discount (15%)</span>
+                    <span id="cartDiscount" class="text-emerald-400">-₹0</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>GST (5%)</span>
+                    <span id="cartTax" class="text-stone-200">₹0</span>
+                </div>
+                <div class="flex justify-between">
+                    <span id="packingLabel">Delivery & Packaging</span>
+                    <span id="cartPacking" class="text-stone-200">₹30</span>
+                </div>
+                <div class="border-t border-stone-800 pt-2 flex justify-between font-bold text-white text-base">
+                    <span>Total Amount</span>
+                    <span id="cartTotal" class="text-gold-400">₹0</span>
+                </div>
+            </div>
+
+            <!-- Checkout Buttons -->
+            <div class="pt-2 space-y-2">
+                <button onclick="orderViaWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition">
+                    <i class="fa-brands fa-whatsapp text-base"></i> Send Order to WhatsApp (+91 98666 15115)
+                </button>
+                <button onclick="openInstantUPIModal()" class="w-full bg-gradient-to-r from-gold-500 to-amber-600 hover:brightness-110 text-black font-extrabold py-3 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition">
+                    <i class="fa-solid fa-qrcode text-sm"></i> Pay via UPI QR / Cards / Cash
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dish Customization Modal -->
+    <div id="customizeModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-mandi-card rounded-2xl max-w-md w-full royal-border p-6 space-y-4">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 id="modalDishName" class="font-cinzel text-xl font-bold text-white">Dish Name</h3>
+                    <p id="modalDishDesc" class="text-xs text-stone-400 mt-1">Dish Description</p>
+                </div>
+                <button onclick="closeCustomizeModal()" class="text-stone-400 hover:text-white p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Portion Size -->
+            <div>
+                <label class="block text-xs font-semibold text-gold-400 mb-2 uppercase tracking-wider">Choose Portion</label>
+                <div class="space-y-2 text-xs" id="portionContainer">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+
+            <!-- Spice Level -->
+            <div>
+                <label class="block text-xs font-semibold text-gold-400 mb-2 uppercase tracking-wider">Select Spice Level</label>
+                <div class="grid grid-cols-3 gap-2 text-xs">
+                    <label class="border border-stone-800 bg-mandi-surface p-2.5 rounded-lg flex items-center gap-2 cursor-pointer hover:border-gold-500">
+                        <input type="radio" name="modalSpice" value="Mild" class="accent-gold-500"> Mild
+                    </label>
+                    <label class="border border-stone-800 bg-mandi-surface p-2.5 rounded-lg flex items-center gap-2 cursor-pointer hover:border-gold-500">
+                        <input type="radio" name="modalSpice" value="Medium" checked class="accent-gold-500"> Medium
+                    </label>
+                    <label class="border border-stone-800 bg-mandi-surface p-2.5 rounded-lg flex items-center gap-2 cursor-pointer hover:border-gold-500">
+                        <input type="radio" name="modalSpice" value="Andhra Spicy" class="accent-gold-500"> Andhra 🔥
+                    </label>
+                </div>
+            </div>
+
+            <!-- Add-ons -->
+            <div>
+                <label class="block text-xs font-semibold text-gold-400 mb-2 uppercase tracking-wider">Tasty Add-Ons</label>
+                <div class="space-y-2 text-xs">
+                    <label class="flex justify-between items-center bg-mandi-surface p-2 rounded-lg border border-stone-800 cursor-pointer">
+                        <span class="flex items-center gap-2">
+                            <input type="checkbox" id="addonMayo" value="30" class="accent-gold-500"> Extra Arabian Garlic Toum Mayo
+                        </span>
+                        <span class="text-gold-400 font-bold">+₹30</span>
+                    </label>
+                    <label class="flex justify-between items-center bg-mandi-surface p-2 rounded-lg border border-stone-800 cursor-pointer">
+                        <span class="flex items-center gap-2">
+                            <input type="checkbox" id="addonSoup" value="40" class="accent-gold-500"> Extra Hot Mandi Shorba Soup
+                        </span>
+                        <span class="text-gold-400 font-bold">+₹40</span>
+                    </label>
+                    <label class="flex justify-between items-center bg-mandi-surface p-2 rounded-lg border border-stone-800 cursor-pointer">
+                        <span class="flex items-center gap-2">
+                            <input type="checkbox" id="addonRice" value="90" class="accent-gold-500"> Extra Spiced Basmati Mandi Rice
+                        </span>
+                        <span class="text-gold-400 font-bold">+₹90</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="pt-2 flex items-center justify-between border-t border-stone-800">
+                <div>
+                    <span class="text-[10px] text-stone-400 block uppercase">Total Item Cost</span>
+                    <span id="modalTotalCost" class="text-xl font-bold text-gold-400">₹0</span>
+                </div>
+                <button onclick="confirmCustomizedItem()" class="bg-gradient-to-r from-gold-500 to-amber-600 hover:brightness-110 text-black font-extrabold px-6 py-2.5 rounded-lg text-xs uppercase tracking-wider shadow">
+                    Add to Feast Plate
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instant UPI QR & Payment Modal -->
+    <div id="upiModal" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-mandi-card rounded-3xl max-w-md w-full royal-border p-6 space-y-4">
+            <div class="flex justify-between items-start border-b border-stone-800 pb-3">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-shield-heart text-gold-400 text-lg"></i>
+                    <h3 class="font-cinzel text-lg font-bold text-white">Payment & Confirmation</h3>
+                </div>
+                <button onclick="closeInstantUPIModal()" class="text-stone-400 hover:text-white p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Customer Details Form -->
+            <div class="space-y-3 text-xs">
+                <div>
+                    <label class="block text-stone-300 font-medium mb-1">Your Name</label>
+                    <input type="text" id="custName" placeholder="e.g. Ramesh Varma" class="w-full bg-mandi-surface border border-stone-800 rounded-lg p-2.5 text-white focus:outline-none focus:border-gold-500">
+                </div>
+                <div>
+                    <label class="block text-stone-300 font-medium mb-1">Your Mobile / WhatsApp Number *</label>
+                    <input type="tel" id="custPhone" placeholder="e.g. 98666 15115" class="w-full bg-mandi-surface border border-stone-800 rounded-lg p-2.5 text-white focus:outline-none focus:border-gold-500">
+                </div>
+                <div id="addressFieldContainer">
+                    <label class="block text-stone-300 font-medium mb-1">Delivery Address & Landmark</label>
+                    <textarea id="custAddress" rows="2" placeholder="House/Flat No, Landmark, SR Nagar / Ameerpet" class="w-full bg-mandi-surface border border-stone-800 rounded-lg p-2.5 text-white focus:outline-none focus:border-gold-500"></textarea>
+                </div>
+            </div>
+
+            <!-- Dynamic UPI QR Display -->
+            <div class="bg-white p-4 rounded-2xl text-center space-y-2">
+                <p class="text-black font-extrabold text-xs uppercase tracking-wider">Scan to Pay via GPay / PhonePe / Paytm</p>
+                <div class="flex justify-center py-1">
+                    <img id="upiQrImage" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=upi://pay?pa=9866615115@ybl%26pn=TollywoodMandi" alt="UPI QR Code" class="w-40 h-40 border border-stone-300 rounded-lg p-1">
+                </div>
+                <div class="text-black font-black text-lg" id="modalPayableTotal">Total: ₹0</div>
+                <p class="text-[10px] text-stone-600 font-mono">UPI ID: 9866615115@ybl (Tollywood Mandi)</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 text-xs">
+                <button onclick="completePayment('UPI_ONLINE')" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:brightness-110 text-white font-bold py-2.5 rounded-lg flex items-center justify-center gap-1.5 transition">
+                    <i class="fa-solid fa-circle-check"></i> I Have Paid Online
+                </button>
+                <button onclick="completePayment('CASH_ON_DELIVERY')" class="bg-stone-800 hover:bg-stone-700 text-stone-300 font-bold py-2.5 rounded-lg flex items-center justify-center gap-1.5 transition">
+                    <i class="fa-solid fa-money-bill-wave"></i> Pay via Cash / COD
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- UI Notification Toast Box (No alerts) -->
+    <div id="toastNotification" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 bg-mandi-card border border-gold-500/60 shadow-2xl rounded-2xl px-5 py-4 flex items-center gap-3 text-xs text-white max-w-sm pointer-events-none">
+        <div id="toastIcon" class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center flex-shrink-0 text-sm">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="flex-1">
+            <h5 id="toastTitle" class="font-cinzel font-bold text-gold-300 text-xs">Tollywood Mandi</h5>
+            <p id="toastMessage" class="text-stone-300 text-[11px] leading-snug">Notification message here</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-500/30 text-stone-400 py-12 px-4 sm:px-6 lg:px-8 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full border border-gold-500 flex items-center justify-center bg-gold-600 text-black">
+                        <i class="fa-solid fa-crown text-sm text-white"></i>
+                    </div>
+                    <span class="font-cinzel text-lg font-bold text-white tracking-wider">Tollywood Mandi</span>
+                </div>
+                <p class="leading-relaxed">Hyderabad's cinema-themed royal Mandi destination. Serving authentic slow-roasted chicken, mutton juicy, and giant family trays.</p>
+                <div class="flex gap-3 text-gold-400 text-base pt-1">
+                    <a href="https://maps.app.goo.gl/fPqZxUEgb39VZA488" target="_blank" class="hover:text-white"><i class="fa-solid fa-location-dot"></i></a>
+                    <a href="https://wa.me/919866615115" target="_blank" class="hover:text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="tel:+919866615115" class="hover:text-white"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-cinzel font-bold text-white uppercase text-sm mb-3">Quick Navigation</h4>
+                <ul class="space-y-2">
+                    <li><a href="#menu" class="hover:text-gold-400 transition">Tollywood Movie Menu</a></li>
+                    <li><a href="#platters" class="hover:text-gold-400 transition">Bahubali Giant Platter</a></li>
+                    <li><a href="#ambience" class="hover:text-gold-400 transition">Majlis Floor Cabins</a></li>
+                    <li><a href="#booking" class="hover:text-gold-400 transition">Table Reservation</a></li>
+                    <li><a href="#contact" class="hover:text-gold-400 transition">Directions to SR Nagar</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-cinzel font-bold text-white uppercase text-sm mb-3">Popular Movie Feasts</h4>
+                <ul class="space-y-2">
+                    <li>Kushi Mutton Juicy Mandi (₹479)</li>
+                    <li>RRR Chicken Mandi (₹359)</li>
+                    <li>Simhadri Fry Piece Mandi (₹349)</li>
+                    <li>Pushpa Chicken Drumsticks (₹319)</li>
+                    <li>Adhipathi Apricot Delight (₹120)</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-cinzel font-bold text-white uppercase text-sm mb-3">Direct Contact</h4>
+                <p class="mb-1 text-white font-semibold">1st Floor, Venkat's Building,</p>
+                <p class="mb-2">Sanjeeva Reddy Nagar, Ameerpet, Hyderabad 500038</p>
+                <p class="text-gold-400 font-bold mb-1"><i class="fa-solid fa-phone mr-1"></i> +91 98666 15115</p>
+                <p><i class="fa-solid fa-clock mr-1"></i> 12:30 PM – 01:00 AM Daily</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-stone-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 gap-3">
+            <p>© <span id="yearSpan">2026</span> Tollywood Mandi. All rights reserved. SR Nagar, Hyderabad.</p>
+            <p class="text-gold-400 font-medium">Authentic Flavors • Great Vibes • Always 🎬</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('yearSpan').textContent = new Date().getFullYear();
+
+        // Preset Date field for booking to today
+        const todayStr = new Date().toISOString().split('T')[0];
+        document.getElementById('resDate').value = todayStr;
+        document.getElementById('resDate').min = todayStr;
+
+        // VERIFIED TOLLYWOOD MANDI SR NAGAR FOOD DATABASE
+        const menuItems = [
+            // GIANT TRAYS
+            {
+                id: 'g1',
+                name: 'Bahubali Mandi (7-8 Persons)',
+                category: 'platters',
+                price: 3299,
+                serves: 'Serves 7-8',
+                rating: '4.9',
+                isVeg: false,
+                desc: 'Chicken fry [2 pcs], Faham [1 pc], Barbeque [1 pc], Broasted [1 pc], Juicy Mutton [1 pc], Fish Fry [1 pc], 1 Starter & 2 Beverages.',
+                image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 'g2',
+                name: 'Maya Bazar Mandi (4-5 Persons)',
+                category: 'platters',
+                price: 2299,
+                serves: 'Serves 4-5',
+                rating: '4.8',
+                isVeg: false,
+                desc: 'Chicken juicy [1 pc], Faham [1 pc], Mutton fry [1 pc], Barbeque [1 pc], Fish fry [1 pc], Double Ka Meetha and Kaddu Ka Kheer.',
+                image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 'g3',
+                name: "Tollywood's Special Mandi (3-4 Persons)",
+                category: 'platters',
+                price: 1799,
+                serves: 'Serves 3-4',
+                rating: '4.9',
+                isVeg: false,
+                desc: 'Mutton Turkish Mandi, RRR Chicken Mandi, Crispy Fish, Chicken Mongolian & 2 Cool Beverages.',
+                image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+
+            // MUTTON MANDIS
+            {
+                id: 'm1',
+                name: 'Kushi Mutton Juicy Mandi',
+                category: 'mutton',
+                price: 479,
+                serves: 'Serves 1-2',
+                rating: '4.9',
+                isVeg: false,
+                desc: 'Slow-cooked succulent tender mutton pieces infused with mild aromatic spices over spiced basmati Mandi rice.',
+                image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 'm2',
+                name: 'Salaar Mutton Mandi',
+                category: 'mutton',
+                price: 489,
+                serves: 'Serves 1-2',
+                rating: '4.9',
+                isVeg: false,
+                desc: 'Violent and intense flavor! Slow-braised dark mutton roast tossed in pepper masala atop fragrant mandi rice.',
+                image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 'm3',
+                name: 'Dasara Mutton Ghee Roast Mandi',
+                category: 'mutton',
+                price: 499,
+                serves: 'Serves 1-2',
+                rating: '4.8',
+                isVeg: false,
+                desc: 'Desi ghee tempered spicy bone-in mutton tossed in red Byadgi chilli paste over long grain mandi rice.',
+                image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+            {
+                id: 'm4',
+                name: 'Badri Mutton Fry Mandi',
+                category: 'mutton',
+                price: 449,
+                serves: 'Serves 1-2',
+                rating: '4.8',
+                isVeg: false,
+                desc: 'Direct and powerful. Crispy deep-fried mutton boti pieces with curry leaves, cashews and green chilies.',
+                image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+
+            // CHICKEN MANDIS
+            {
+                id: 'c1',
+                name: 'RRR Chicken Mandi',
+                category: 'chicken',
+                price: 359,
+                serves: 'Serves 1-2',
+                rating: '4.9',
+                isVeg: false,
+                desc: 'The ultimate blockbuster combo of slow-charred chicken with dry-fruit mandi rice, garlic toum and soup.',
+                image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 'c2',
+                name: 'Simhadri Fry Piece Chicken Mandi',
+                category: 'chicken',
+                price: 349,
+                serves: 'Serves 1-2',
+                rating: '4.8',
+                isVeg: false,
+                desc: 'The aura of original spicy Andhra chicken fry tossed in curry leaf masala served atop scented Mandi rice.',
+                image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 'c3',
+                name: 'Arjun Reddy Chicken Juicy Mandi',
+                category: 'chicken',
+                price: 359,
+                serves: 'Serves 1-2',
+                rating: '4.8',
+                isVeg: false,
+                desc: 'Intense and rich flavor profile. Tender chicken drenched in special mutton-infused broth atop butter rice.',
+                image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+            {
+                id: 'c4',
+                name: 'Aha Turkish Chicken Mandi',
+                category: 'chicken',
+                price: 359,
+                serves: 'Serves 1-2',
+                rating: '4.7',
+                isVeg: false,
+                desc: 'Turkish marinade with sumac, olive oil, and Arabic spices slow-grilled over charcoal embers.',
+                image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+            {
+                id: 'c5',
+                name: 'Leader Chicken Faham Mandi',
+                category: 'chicken',
+                price: 359,
+                serves: 'Serves 1-2',
+                rating: '4.8',
+                isVeg: false,
+                desc: 'Charcoal coal-smoked whole chicken quarter served with tangy tomato shatta salsa and garlic dip.',
+                image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+
+            // STARTERS
+            {
+                id: 's1',
+                name: 'Pushpa Chicken Drumsticks',
+                category: 'starters',
+                price: 319,
+                serves: 'Thaggede Le!',
+                rating: '4.9',
+                isVeg: false,
+                desc: 'Spicy crusted succulent chicken drumsticks glazed in fire tandoori spices. An all-time favorite hit.',
+                image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 's2',
+                name: 'Chicken Laila Lollipop',
+                category: 'starters',
+                price: 319,
+                serves: 'A Classical Hit',
+                rating: '4.8',
+                isVeg: false,
+                desc: 'Crispy fried chicken winglets tossed with garlic, ginger, spring onion, and Tollywood Indo-Chinese sauce.',
+                image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 's3',
+                name: 'Manmadhudu Chicken Creamy Tikka',
+                category: 'starters',
+                price: 349,
+                serves: 'Smooth & Classy',
+                rating: '4.8',
+                isVeg: false,
+                desc: 'Melt-in-mouth chicken chunks marinated in cashew cream, hung curd, and fragrant cardamom.',
+                image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+            {
+                id: 's4',
+                name: 'Saaho Spicy Fry Chicken',
+                category: 'starters',
+                price: 349,
+                serves: 'Feel the Fire',
+                rating: '4.8',
+                isVeg: false,
+                desc: 'Boneless tender chicken cubes tossed in high-heat wok with green chillies, crushed peppercorns and curry leaves.',
+                image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+
+            // VEG SPECIALS
+            {
+                id: 'v1',
+                name: 'Premam Paneer Mandi',
+                category: 'veg',
+                price: 349,
+                serves: 'Serves 1-2',
+                rating: '4.8',
+                isVeg: true,
+                desc: 'Fall in love with every bite. Ghee-scented Mandi rice paired with roasted cottage cheese cubes & cashews.',
+                image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 'v2',
+                name: 'Malliswari Mushroom Mandi',
+                category: 'veg',
+                price: 359,
+                serves: 'Serves 1-2',
+                rating: '4.7',
+                isVeg: true,
+                desc: 'Classic taste worth the name. Plump button mushrooms simmered in aromatic Mandi seasonings.',
+                image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+            {
+                id: 'v3',
+                name: 'Gamyam Gobi Mandi',
+                category: 'veg',
+                price: 329,
+                serves: 'Serves 1-2',
+                rating: '4.7',
+                isVeg: true,
+                desc: 'Flavorful vegetarian journey. Crispy spiced cauliflower florets over seasoned Arabic rice.',
+                image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+            {
+                id: 'v4',
+                name: 'Akhanda Chilli Paneer',
+                category: 'veg',
+                price: 299,
+                serves: 'Veg Starter',
+                rating: '4.7',
+                isVeg: true,
+                desc: 'Powerful mass flavor! Crisp paneer cubes wok-tossed with green chilies, onions, and spicy soy garlic.',
+                image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+            {
+                id: 'v5',
+                name: 'Bullabbai Baby Corn 65',
+                category: 'veg',
+                price: 299,
+                serves: 'Veg Starter',
+                rating: '4.7',
+                isVeg: true,
+                desc: 'Has a bit of spicy tikka. Crunchy golden baby corn tossed in hot red 65 yogurt masala.',
+                image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+
+            // DESSERTS & DRINKS
+            {
+                id: 'd1',
+                name: 'Adhipathi Apricot Delight',
+                category: 'desserts',
+                price: 120,
+                serves: 'Pure Happiness',
+                rating: '4.9',
+                isVeg: true,
+                desc: 'Classic Hyderabadi stewed sweet apricots topped with thick fresh cream and velvety custard layers.',
+                image: 'https://images.unsplash.com/photo-1589119908995-c6837fa14d48?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 'd2',
+                name: 'Krishna Kaddu Ka Kheer',
+                category: 'desserts',
+                price: 60,
+                serves: 'Sweet Note',
+                rating: '4.8',
+                isVeg: true,
+                desc: 'Rich bottle-gourd pudding cooked slowly in whole buffalo milk, sago pearls, khoya, and pistachios.',
+                image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+            {
+                id: 'd3',
+                name: 'Dhee Double Ka Meetha',
+                category: 'desserts',
+                price: 60,
+                serves: 'Royal Sweet',
+                rating: '4.8',
+                isVeg: true,
+                desc: 'Traditional Hyderabadi delicacy made with ghee-fried bread soaked in saffron cardamom condensed milk.',
+                image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            },
+            {
+                id: 'd4',
+                name: 'Temper Goli Soda',
+                category: 'desserts',
+                price: 60,
+                serves: 'Pop the Goli',
+                rating: '4.8',
+                isVeg: true,
+                desc: 'Vintage pop-the-marble glass bottle soda. Choice of Lemon, Paneer Soda, or Jeera masala.',
+                image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=700&auto=format&fit=crop',
+                bestseller: true
+            },
+            {
+                id: 'd5',
+                name: 'Kick Cool Drinks',
+                category: 'desserts',
+                price: 24,
+                serves: 'Chilled',
+                rating: '4.6',
+                isVeg: true,
+                desc: 'Stay cool and refreshed with Thums Up, Sprite, or Coca Cola 250ml can.',
+                image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=700&auto=format&fit=crop',
+                bestseller: false
+            }
+        ];
+
+        // Global State
+        let cart = [];
+        let currentCategory = 'all';
+        let searchQuery = '';
+        let orderType = 'delivery';
+        let appliedCoupon = null;
+        let selectedItemForCustomize = null;
+        const RESTAURANT_PHONE = '919866615115';
+
+        function renderMenu() {
+            const grid = document.getElementById('menuGrid');
+            grid.innerHTML = '';
+
+            let filtered = menuItems;
+
+            if (currentCategory !== 'all') {
+                filtered = filtered.filter(item => item.category === currentCategory);
+            }
+
+            if (searchQuery.trim() !== '') {
+                const q = searchQuery.toLowerCase();
+                filtered = filtered.filter(item => 
+                    item.name.toLowerCase().includes(q) || 
+                    item.desc.toLowerCase().includes(q)
+                );
+            }
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12 space-y-2">
+                        <i class="fa-solid fa-face-meh text-3xl text-stone-600"></i>
+                        <p class="text-stone-400 text-sm">No dishes matched "${searchQuery}".</p>
+                        <button onclick="clearSearch()" class="text-gold-400 text-xs font-semibold hover:underline">Show All Dishes</button>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-mandi-card rounded-2xl overflow-hidden royal-border flex flex-col justify-between group hover:border-gold-500/60 transition duration-300";
+                
+                const vegBadge = item.isVeg 
+                    ? `<span class="inline-flex items-center gap-1 border border-emerald-500 bg-emerald-950/70 text-emerald-400 text-[10px] px-1.5 py-0.5 rounded font-bold"><span class="w-2 h-2 bg-emerald-400 rounded-full inline-block"></span> VEG</span>`
+                    : `<span class="inline-flex items-center gap-1 border border-red-500 bg-red-950/70 text-red-400 text-[10px] px-1.5 py-0.5 rounded font-bold"><span class="w-0 h-0 border-l-[4px] border-r-[4px] border-b-[7px] border-transparent border-b-red-500 inline-block"></span> NON-VEG</span>`;
+
+                card.innerHTML = `
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="${item.image}" alt="${item.name}" onerror="this.src='https://placehold.co/600x400/1F100B/D4AF37?text=${encodeURIComponent(item.name)}'" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        ${item.bestseller ? '<span class="absolute top-3 left-3 bg-gradient-to-r from-amber-600 to-gold-500 text-black text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow">Bestseller</span>' : ''}
+                        <span class="absolute bottom-3 right-3 bg-black/85 backdrop-blur-sm text-gold-300 text-xs px-2.5 py-1 rounded-full border border-gold-500/30">
+                            <i class="fa-solid fa-users text-[10px] mr-1"></i>${item.serves}
+                        </span>
+                    </div>
+
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-1">
+                                <h3 class="font-cinzel font-bold text-lg text-white group-hover:text-gold-300 transition-colors leading-tight">${item.name}</h3>
+                                ${vegBadge}
+                            </div>
+                            <p class="text-stone-300 text-xs leading-relaxed font-light line-clamp-2">${item.desc}</p>
+                        </div>
+
+                        <div class="pt-3 border-t border-stone-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] text-stone-400 block uppercase">Price</span>
+                                <span class="text-xl font-black text-gold-400">₹${item.price}</span>
+                            </div>
+                            <button onclick="openCustomizeModal('${item.id}')" class="bg-gradient-to-r from-gold-500 to-amber-600 hover:brightness-110 active:scale-95 text-black font-extrabold text-xs px-4 py-2 rounded-lg transition flex items-center gap-1.5 shadow-md shadow-gold-500/10">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Filtering & Search
+        function filterCategory(cat, element) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                btn.className = "cat-pill px-5 py-2 rounded-full text-xs sm:text-sm font-medium border border-gold-500/30 bg-mandi-card text-stone-300 hover:border-gold-500 whitespace-nowrap transition";
+            });
+            if (element) {
+                element.className = "cat-pill active-cat px-5 py-2 rounded-full text-xs sm:text-sm font-semibold border border-gold-500 bg-gold-500 text-black whitespace-nowrap transition";
+            }
+            renderMenu();
+        }
+
+        function handleSearchMenu() {
+            searchQuery = document.getElementById('menuSearchInput').value;
+            renderMenu();
+        }
+
+        function clearSearch() {
+            searchQuery = '';
+            document.getElementById('menuSearchInput').value = '';
+            renderMenu();
+        }
+
+        function openCustomizeModal(itemId) {
+            const item = menuItems.find(i => i.id === itemId);
+            if (!item) return;
+
+            selectedItemForCustomize = item;
+            document.getElementById('modalDishName').textContent = item.name;
+            document.getElementById('modalDishDesc').textContent = item.desc;
+
+            const portionContainer = document.getElementById('portionContainer');
+            portionContainer.innerHTML = '';
+
+            const isPlatter = item.category === 'platters';
+            const isDessert = item.category === 'desserts';
+
+            if (isPlatter || isDessert) {
+                portionContainer.innerHTML = `
+                    <label class="flex justify-between items-center bg-mandi-surface p-2.5 rounded-lg border border-gold-500 cursor-pointer">
+                        <span class="flex items-center gap-2">
+                            <input type="radio" name="portionOpt" value="0" checked onchange="updateModalTotal()" class="accent-gold-500"> Standard Portion (${item.serves})
+                        </span>
+                        <span class="font-bold text-white">₹${item.price}</span>
+                    </label>
+                `;
+            } else {
+                portionContainer.innerHTML = `
+                    <label class="flex justify-between items-center bg-mandi-surface p-2.5 rounded-lg border border-gold-500 cursor-pointer">
+                        <span class="flex items-center gap-2">
+                            <input type="radio" name="portionOpt" value="0" checked onchange="updateModalTotal()" class="accent-gold-500"> Single Portion (${item.serves})
+                        </span>
+                        <span class="font-bold text-white">₹${item.price}</span>
+                    </label>
+                    <label class="flex justify-between items-center bg-mandi-surface p-2.5 rounded-lg border border-stone-800 cursor-pointer">
+                        <span class="flex items-center gap-2">
+                            <input type="radio" name="portionOpt" value="280" onchange="updateModalTotal()" class="accent-gold-500"> Double Feast (Extra meat + rice)
+                        </span>
+                        <span class="font-bold text-white">₹${item.price + 280}</span>
+                    </label>
+                `;
+            }
+
+            document.getElementById('addonMayo').checked = false;
+            document.getElementById('addonSoup').checked = false;
+            document.getElementById('addonRice').checked = false;
+            document.getElementById('addonMayo').onchange = updateModalTotal;
+            document.getElementById('addonSoup').onchange = updateModalTotal;
+            document.getElementById('addonRice').onchange = updateModalTotal;
+
+            updateModalTotal();
+            document.getElementById('customizeModal').classList.remove('hidden');
+        }
+
+        function closeCustomizeModal() {
+            document.getElementById('customizeModal').classList.add('hidden');
+            selectedItemForCustomize = null;
+        }
+
+        function updateModalTotal() {
+            if (!selectedItemForCustomize) return;
+            let total = selectedItemForCustomize.price;
+
+            const selectedPortion = document.querySelector('input[name="portionOpt"]:checked');
+            if (selectedPortion) {
+                total += parseInt(selectedPortion.value, 10);
+            }
+
+            if (document.getElementById('addonMayo').checked) total += 30;
+            if (document.getElementById('addonSoup').checked) total += 40;
+            if (document.getElementById('addonRice').checked) total += 90;
+
+            document.getElementById('modalTotalCost').textContent = `₹${total}`;
+        }
+
+        function confirmCustomizedItem() {
+            if (!selectedItemForCustomize) return;
+
+            const selectedPortion = document.querySelector('input[name="portionOpt"]:checked');
+            const portionExtra = selectedPortion ? parseInt(selectedPortion.value, 10) : 0;
+            const portionLabel = portionExtra > 0 ? 'Double Portion' : 'Single Portion';
+
+            const spiceElem = document.querySelector('input[name="modalSpice"]:checked');
+            const spiceVal = spiceElem ? spiceElem.value : 'Medium';
+
+            const addons = [];
+            let addonCost = 0;
+            if (document.getElementById('addonMayo').checked) { addons.push('Mayo'); addonCost += 30; }
+            if (document.getElementById('addonSoup').checked) { addons.push('Shorba'); addonCost += 40; }
+            if (document.getElementById('addonRice').checked) { addons.push('Extra Rice'); addonCost += 90; }
+
+            const unitPrice = selectedItemForCustomize.price + portionExtra + addonCost;
+            const cartItemId = `${selectedItemForCustomize.id}_${portionLabel}_${spiceVal}_${addons.join('-')}`;
+
+            const existing = cart.find(i => i.uid === cartItemId);
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({
+                    uid: cartItemId,
+                    id: selectedItemForCustomize.id,
+                    name: selectedItemForCustomize.name,
+                    price: unitPrice,
+                    quantity: 1,
+                    portion: portionLabel,
+                    spice: spiceVal,
+                    addons: addons,
+                    image: selectedItemForCustomize.image
+                });
+            }
+
+            closeCustomizeModal();
+            updateCartUI();
+            toggleCartDrawer(true);
+        }
+
+        function addToCartDirect(itemId) {
+            openCustomizeModal(itemId);
+        }
+
+        function toggleCartDrawer(open) {
+            const drawer = document.getElementById('cartDrawer');
+            if (open) {
+                drawer.classList.remove('translate-x-full');
+            } else {
+                drawer.classList.add('translate-x-full');
+            }
+        }
+
+        function setOrderType(type) {
+            orderType = type;
+            ['delivery', 'takeaway', 'dinein'].forEach(t => {
+                const btn = document.getElementById(`type${t.charAt(0).toUpperCase() + t.slice(1)}`);
+                if (t === type) {
+                    btn.className = "py-1.5 rounded-lg bg-gold-500 text-black font-bold";
+                } else {
+                    btn.className = "py-1.5 rounded-lg hover:text-white";
+                }
+            });
+
+            const addrContainer = document.getElementById('addressFieldContainer');
+            const packingLabel = document.getElementById('packingLabel');
+            if (type === 'delivery') {
+                if (addrContainer) addrContainer.style.display = 'block';
+                packingLabel.textContent = 'Delivery & Packaging Fee';
+            } else {
+                if (addrContainer) addrContainer.style.display = 'none';
+                packingLabel.textContent = type === 'takeaway' ? 'Eco Takeaway Box Fee' : 'Table Service';
+            }
+            updateCartUI();
+        }
+
+        function changeItemQty(uid, delta) {
+            const item = cart.find(i => i.uid === uid);
+            if (!item) return;
+
+            item.quantity += delta;
+            if (item.quantity <= 0) {
+                cart = cart.filter(i => i.uid !== uid);
+            }
+            updateCartUI();
+        }
+
+        function applyCoupon() {
+            const code = document.getElementById('couponInput').value.trim().toUpperCase();
+            const msg = document.getElementById('couponMsg');
+
+            if (code === 'TOLLYWOOD15') {
+                appliedCoupon = { code: 'TOLLYWOOD15', rate: 0.15 };
+                msg.textContent = '🎬 Blockbuster 15% discount applied successfully!';
+                msg.className = 'text-[11px] text-emerald-400 font-semibold block';
+            } else {
+                appliedCoupon = null;
+                msg.textContent = 'Invalid coupon code. Try TOLLYWOOD15.';
+                msg.className = 'text-[11px] text-red-400 font-semibold block';
+            }
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cartCountBadge');
+            const totalCount = cart.reduce((acc, curr) => acc + curr.quantity, 0);
+            badge.textContent = totalCount;
+
+            const list = document.getElementById('cartItemsList');
+            const subtotalElem = document.getElementById('cartSubtotal');
+            const taxElem = document.getElementById('cartTax');
+            const totalElem = document.getElementById('cartTotal');
+            const packingElem = document.getElementById('cartPacking');
+            const discountRow = document.getElementById('discountRow');
+            const discountElem = document.getElementById('cartDiscount');
+
+            if (cart.length === 0) {
+                list.innerHTML = `
+                    <div class="text-center py-16 space-y-3">
+                        <i class="fa-solid fa-utensils text-4xl text-stone-600"></i>
+                        <p class="text-stone-400 text-xs">Your royal plate is currently empty.</p>
+                        <a href="#menu" onclick="toggleCartDrawer(false)" class="inline-block text-gold-400 text-xs font-semibold hover:underline">Explore Blockbuster Menu</a>
+                    </div>
+                `;
+                subtotalElem.textContent = '₹0';
+                taxElem.textContent = '₹0';
+                totalElem.textContent = '₹0';
+                packingElem.textContent = '₹0';
+                discountRow.style.display = 'none';
+                return;
+            }
+
+            list.innerHTML = '';
+            let subtotal = 0;
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+
+                const row = document.createElement('div');
+                row.className = "flex items-center justify-between bg-mandi-surface p-3 rounded-xl border border-stone-800 gap-2";
+                row.innerHTML = `
+                    <div class="flex items-center gap-3 flex-1 min-w-0">
+                        <img src="${item.image}" alt="${item.name}" onerror="this.src='https://placehold.co/100x100/1F100B/D4AF37?text=Food'" class="w-12 h-12 rounded-lg object-cover flex-shrink-0">
+                        <div class="truncate">
+                            <h4 class="text-xs font-bold text-white truncate">${item.name}</h4>
+                            <p class="text-[10px] text-stone-400">${item.portion} • ${item.spice}${item.addons.length ? ' • ' + item.addons.join('+') : ''}</p>
+                            <span class="text-[11px] text-gold-400 font-bold">₹${item.price} each</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-shrink-0">
+                        <button onclick="changeItemQty('${item.uid}', -1)" class="w-6 h-6 rounded bg-stone-800 text-white hover:bg-gold-500 hover:text-black text-xs font-bold transition flex items-center justify-center">-</button>
+                        <span class="text-xs font-bold text-white px-1">${item.quantity}</span>
+                        <button onclick="changeItemQty('${item.uid}', 1)" class="w-6 h-6 rounded bg-stone-800 text-white hover:bg-gold-500 hover:text-black text-xs font-bold transition flex items-center justify-center">+</button>
+                    </div>
+                `;
+                list.appendChild(row);
+            });
+
+            let discount = 0;
+            if (appliedCoupon) {
+                discount = Math.round(subtotal * appliedCoupon.rate);
+                discountRow.style.display = 'flex';
+                discountElem.textContent = `-₹${discount}`;
+            } else {
+                discountRow.style.display = 'none';
+            }
+
+            const taxable = subtotal - discount;
+            const tax = Math.round(taxable * 0.05);
+            const packing = orderType === 'delivery' ? 35 : (orderType === 'takeaway' ? 25 : 0);
+            const grandTotal = taxable + tax + packing;
+
+            subtotalElem.textContent = `₹${subtotal}`;
+            taxElem.textContent = `₹${tax}`;
+            packingElem.textContent = `₹${packing}`;
+            totalElem.textContent = `₹${grandTotal}`;
+
+            const modalPayable = document.getElementById('modalPayableTotal');
+            if (modalPayable) {
+                modalPayable.textContent = `Total: ₹${grandTotal}`;
+            }
+
+            // Update QR code with exact amount
+            const upiQr = document.getElementById('upiQrImage');
+            if (upiQr) {
+                upiQr.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=upi://pay?pa=9866615115@ybl%26pn=TollywoodMandi%26am=${grandTotal}%26cu=INR`;
+            }
+        }
+
+        // Custom in-app notification toast (Replaces window.alert)
+        function showNotification(title, message, isError = false) {
+            const toast = document.getElementById('toastNotification');
+            const toastTitle = document.getElementById('toastTitle');
+            const toastMessage = document.getElementById('toastMessage');
+            const toastIcon = document.getElementById('toastIcon');
+
+            if (!toast) return;
+
+            toastTitle.textContent = title;
+            toastMessage.textContent = message;
+
+            if (isError) {
+                toastIcon.className = "w-8 h-8 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0 text-sm";
+                toastIcon.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i>`;
+                toast.classList.add('border-red-500/50');
+                toast.classList.remove('border-gold-500/60');
+            } else {
+                toastIcon.className = "w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center flex-shrink-0 text-sm";
+                toastIcon.innerHTML = `<i class="fa-solid fa-circle-check"></i>`;
+                toast.classList.add('border-gold-500/60');
+                toast.classList.remove('border-red-500/50');
+            }
+
+            toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+            }, 3500);
+        }
+
+        function orderViaWhatsApp() {
+            if (cart.length === 0) {
+                showNotification("Plate is Empty", "Please select and add some items to your feast plate first!", true);
+                return;
+            }
+
+            let subtotal = 0;
+            let receipt = `*🎬 NEW ORDER - TOLLYWOOD MANDI (SR NAGAR)*%0A`;
+            receipt += `*Type:* ${orderType.toUpperCase()}%0A%0A`;
+
+            cart.forEach((i, idx) => {
+                const cost = i.price * i.quantity;
+                subtotal += cost;
+                receipt += `${idx + 1}. *${i.name}* (${i.portion})%0A`;
+                receipt += `   • Spice: ${i.spice}${i.addons.length ? ' | Extras: ' + i.addons.join(', ') : ''}%0A`;
+                receipt += `   • Qty: ${i.quantity} x ₹${i.price} = *₹${cost}*%0A%0A`;
+            });
+
+            let discount = appliedCoupon ? Math.round(subtotal * appliedCoupon.rate) : 0;
+            const taxable = subtotal - discount;
+            const tax = Math.round(taxable * 0.05);
+            const packing = orderType === 'delivery' ? 35 : (orderType === 'takeaway' ? 25 : 0);
+            const total = taxable + tax + packing;
+
+            receipt += `----------------------------%0A`;
+            receipt += `*Subtotal:* ₹${subtotal}%0A`;
+            if (discount > 0) receipt += `*Discount (TOLLYWOOD15):* -₹${discount}%0A`;
+            receipt += `*GST (5%):* ₹${tax}%0A`;
+            receipt += `*Packaging / Delivery:* ₹${packing}%0A`;
+            receipt += `*Total Payable:* *₹${total}*%0A`;
+            receipt += `----------------------------%0A`;
+            receipt += `📍 *Outlet:* Venkat's Building, 1st Floor, SR Nagar, Ameerpet, Hyderabad%0A`;
+            receipt += `Please confirm order preparation and dispatch time!`;
+
+            const waUrl = `https://wa.me/${RESTAURANT_PHONE}?text=${receipt}`;
+            window.open(waUrl, '_blank');
+        }
+
+        function openInstantUPIModal() {
+            if (cart.length === 0) {
+                showNotification("Cart is Empty", "Add your favorite Mandi items before proceeding to checkout.", true);
+                return;
+            }
+            updateCartUI();
+            document.getElementById('upiModal').classList.remove('hidden');
+        }
+
+        function closeInstantUPIModal() {
+            document.getElementById('upiModal').classList.add('hidden');
+        }
+
+        function completePayment(method) {
+            const name = document.getElementById('custName').value.trim() || 'Valued Guest';
+            const phone = document.getElementById('custPhone').value.trim();
+            const address = document.getElementById('custAddress').value.trim();
+
+            if (!phone) {
+                showNotification("Phone Number Required", "Please enter your mobile or WhatsApp number so we can reach you!", true);
+                return;
+            }
+
+            const orderId = 'TM-' + Math.floor(100000 + Math.random() * 900000);
+            let subtotal = 0;
+            cart.forEach(i => subtotal += (i.price * i.quantity));
+            let discount = appliedCoupon ? Math.round(subtotal * appliedCoupon.rate) : 0;
+            const tax = Math.round((subtotal - discount) * 0.05);
+            const packing = orderType === 'delivery' ? 35 : 0;
+            const total = (subtotal - discount) + tax + packing;
+
+            let msg = `*🎬 ORDER CONFIRMATION - TOLLYWOOD MANDI*%0A`;
+            msg += `*Order ID:* ${orderId}%0A`;
+            msg += `*Customer:* ${name} (${phone})%0A`;
+            msg += `*Order Type:* ${orderType.toUpperCase()}%0A`;
+            if (orderType === 'delivery' && address) {
+                msg += `*Address:* ${address}%0A`;
+            }
+            msg += `*Payment Method:* ${method}%0A`;
+            msg += `*Total Paid/Due:* ₹${total}%0A%0A`;
+            msg += `*Items Ordered:*%0A`;
+            cart.forEach(i => {
+                msg += `• ${i.name} (${i.portion}, ${i.spice}) x ${i.quantity}%0A`;
+            });
+            msg += `%0AOrder recorded! Kitchen is preparing your royal Mandi.`;
+
+            closeInstantUPIModal();
+            toggleCartDrawer(false);
+            cart = [];
+            updateCartUI();
+
+            showNotification("Order Confirmed!", `Order ${orderId} received. Forwarding to WhatsApp desk.`);
+            setTimeout(() => {
+                window.open(`https://wa.me/${RESTAURANT_PHONE}?text=${msg}`, '_blank');
+            }, 800);
+        }
+
+        function handleReservationSubmit(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('resName').value.trim();
+            const phone = document.getElementById('resPhone').value.trim();
+            const date = document.getElementById('resDate').value;
+            const time = document.getElementById('resTime').value;
+            const guests = document.getElementById('resGuests').value;
+            const seating = document.getElementById('resSeating').value;
+            const notes = document.getElementById('resNotes').value.trim();
+
+            let msg = `*👑 NEW MAJLIS RESERVATION - TOLLYWOOD MANDI*%0A%0A`;
+            msg += `*Guest Name:* ${name}%0A`;
+            msg += `*Phone:* ${phone}%0A`;
+            msg += `*Date:* ${date}%0A`;
+            msg += `*Time Slot:* ${time}%0A`;
+            msg += `*Guests:* ${guests}%0A`;
+            msg += `*Seating:* ${seating}%0A`;
+            if (notes) msg += `*Special Request:* ${notes}%0A`;
+            msg += `%0A📍 *Outlet:* Venkat's Building, 1st Floor, SR Nagar, Ameerpet, Hyderabad%0A`;
+            msg += `Please reserve and confirm our cabin!`;
+
+            showNotification("Reservation Sent!", `Thank you ${name}! Sending your details to the SR Nagar front desk.`);
+            setTimeout(() => {
+                window.open(`https://wa.me/${RESTAURANT_PHONE}?text=${msg}`, '_blank');
+            }, 800);
+
+            e.target.reset();
+            document.getElementById('resDate').value = todayStr;
+        }
+
+        function toggleMobileNav() {
+            const nav = document.getElementById('mobileNav');
+            nav.classList.toggle('hidden');
+        }
+
+        // Initialize Menu on Load
+        window.onload = function() {
+            renderMenu();
+            updateCartUI();
+        };
+    </script>
+</body>
+</html>
